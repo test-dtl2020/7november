@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кобзар. Вибрані твори</title>
+    <style>
+        .card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container {
+            width: 100%;
+            aspect-ratio: 1 / 1.5; /* Приблизне співвідношення сторін обкладинки */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9; /* Колір фону під зображенням */
+        }
+
+        .image-container img {
+            display: block;
+            width: 80%; /* Щоб залишити трохи вільного місця навколо зображення */
+            height: auto;
+            object-fit: contain; /* Щоб зображення повністю вміщувалось без обрізання */
+        }
+
+        .details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .availability {
+            color: #28a745;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .button-container {
+            width: 100%;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .buy-button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image-container">
+            <img src="kobzar_cover.jpg" alt="Обкладинка книги Кобзар">
+        </div>
+        <div class="details">
+            <h2 class="title">Кобзар. ВИБРАНІ ТВОРИ</h2>
+            <p class="availability">В наявності</p>
+        </div>
+        <div class="button-container">
+            <button class="buy-button">Купити</button>
+        </div>
+    </div>
+
+    </body>
+</html>
